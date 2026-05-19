@@ -1,69 +1,189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to our amazing landing page">
-    <title>Welcome - Landing Page</title>
+    <meta name="description" content="AI এবং অটোমেশন দিয়ে আপনার ক্যারিয়ার তৈরি করুন">
+    <title>AI স্টেশন - আপনার ভবিষ্যৎ শুরু হয় এখানে</title>
     <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <header>
             <nav>
-                <div class="logo">MyBrand</div>
-                <ul class="nav-links">
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+                <div class="logo" data-i18n="brand">AI স্টেশন</div>
+                <div class="nav-right">
+                    <ul class="nav-links">
+                        <li><a href="#features" data-i18n="nav.features">বৈশিষ্ট্য</a></li>
+                        <li><a href="#courses" data-i18n="nav.courses">কোর্স</a></li>
+                        <li><a href="#about" data-i18n="nav.about">আমাদের সম্পর্কে</a></li>
+                        <li><a href="#contact" data-i18n="nav.contact">যোগাযোগ</a></li>
+                    </ul>
+                    <div class="language-switcher">
+                        <button id="lang-toggle" class="lang-btn">
+                            <span class="lang-icon">🌐</span>
+                            <span id="current-lang">বাংলা</span>
+                        </button>
+                    </div>
+                </div>
             </nav>
         </header>
 
         <section class="hero">
-            <h1>Welcome to Our Platform</h1>
-            <p class="subtitle">Build amazing things with our powerful tools</p>
-            <div class="cta-buttons">
-                <button class="btn btn-primary">Get Started</button>
-                <button class="btn btn-secondary">Learn More</button>
+            <div class="hero-content">
+                <div class="hero-badge" data-i18n="hero.badge">🎓 অনলাইন শিক্ষা প্ল্যাটফর্ম</div>
+                <h1 data-i18n="hero.title">AI এবং অটোমেশন দিয়ে<br>আপনার ক্যারিয়ার গড়ুন</h1>
+                <p class="subtitle" data-i18n="hero.subtitle">শূন্য থেকে শুরু করে পেশাদার লেভেলে পৌঁছান। আমাদের হাতে-কলমে শেখার কোর্সের মাধ্যমে AI এবং অটোমেশন এর জগতে নিজেকে প্রতিষ্ঠিত করুন।</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" data-i18n="hero.cta.primary">কোর্স শুরু করুন</button>
+                    <button class="btn btn-secondary" data-i18n="hero.cta.secondary">ফ্রি ট্রায়াল নিন</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">১০,০০০+</div>
+                        <div class="stat-label" data-i18n="hero.stats.students">শিক্ষার্থী</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">৫০+</div>
+                        <div class="stat-label" data-i18n="hero.stats.courses">কোর্স</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">৯৫%</div>
+                        <div class="stat-label" data-i18n="hero.stats.satisfaction">সন্তুষ্টি</div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section id="features" class="features">
-            <h2>Features</h2>
+            <h2 data-i18n="features.title">কেন AI স্টেশন বেছে নেবেন?</h2>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">🚀</div>
-                    <h3>Fast Performance</h3>
-                    <p>Lightning-fast load times and optimal performance for your users</p>
+                    <div class="feature-icon">🎯</div>
+                    <h3 data-i18n="features.practical.title">বাস্তব প্রজেক্ট</h3>
+                    <p data-i18n="features.practical.desc">শুধু তত্ত্ব নয়, বাস্তব জীবনের প্রজেক্টের মাধ্যমে শিখুন এবং আপনার পোর্টফোলিও তৈরি করুন</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Secure</h3>
-                    <p>Enterprise-grade security to keep your data safe</p>
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3 data-i18n="features.expert.title">অভিজ্ঞ শিক্ষক</h3>
+                    <p data-i18n="features.expert.desc">ইন্ডাস্ট্রি এক্সপার্টদের কাছ থেকে সরাসরি শিখুন যারা বাস্তব অভিজ্ঞতা শেয়ার করবেন</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>Responsive</h3>
-                    <p>Beautiful design that works on all devices</p>
+                    <div class="feature-icon">⏰</div>
+                    <h3 data-i18n="features.flexible.title">নমনীয় সময়</h3>
+                    <p data-i18n="features.flexible.desc">আপনার সুবিধামত সময়ে শিখুন, যেকোনো জায়গা থেকে অ্যাক্সেস করুন</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3 data-i18n="features.certificate.title">সার্টিফিকেট</h3>
+                    <p data-i18n="features.certificate.desc">কোর্স সম্পন্ন করে পেশাদার সার্টিফিকেট অর্জন করুন যা আপনার ক্যারিয়ারে যোগ করবে মূল্য</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3 data-i18n="features.support.title">লাইফটাইম সাপোর্ট</h3>
+                    <p data-i18n="features.support.desc">কমিউনিটি সাপোর্ট এবং মেন্টরশিপ পান যেকোনো সমস্যায়</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3 data-i18n="features.career.title">ক্যারিয়ার গাইডেন্স</h3>
+                    <p data-i18n="features.career.desc">চাকরি প্রস্তুতি থেকে ইন্টারভিউ পর্যন্ত সম্পূর্ণ গাইডেন্স</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="courses">
+            <h2 data-i18n="courses.title">জনপ্রিয় কোর্সসমূহ</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-badge" data-i18n="courses.badge.bestseller">বেস্টসেলার</div>
+                    <h3 data-i18n="courses.ai.title">AI এবং মেশিন লার্নিং মাস্টারক্লাস</h3>
+                    <p data-i18n="courses.ai.desc">শূন্য থেকে শুরু করে AI এবং মেশিন লার্নিং এর প্রফেশনাল হয়ে উঠুন</p>
+                    <div class="course-meta">
+                        <span>⏱ ২০ ঘন্টা</span>
+                        <span>📚 ১৫টি মডিউল</span>
+                    </div>
+                    <button class="btn btn-primary" data-i18n="courses.cta">আরও জানুন</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-badge course-badge-new" data-i18n="courses.badge.new">নতুন</div>
+                    <h3 data-i18n="courses.automation.title">ওয়ার্কফ্লো অটোমেশন</h3>
+                    <p data-i18n="courses.automation.desc">আধুনিক টুলস ব্যবহার করে ব্যবসায়িক প্রক্রিয়া অটোমেট করুন</p>
+                    <div class="course-meta">
+                        <span>⏱ ১৫ ঘন্টা</span>
+                        <span>📚 ১২টি মডিউল</span>
+                    </div>
+                    <button class="btn btn-primary" data-i18n="courses.cta">আরও জানুন</button>
+                </div>
+                <div class="course-card">
+                    <h3 data-i18n="courses.python.title">পাইথন ফর এভরিওয়ান</h3>
+                    <p data-i18n="courses.python.desc">প্রোগ্রামিং এর বেসিক থেকে অ্যাডভান্স পর্যন্ত পাইথন শিখুন</p>
+                    <div class="course-meta">
+                        <span>⏱ ২৫ ঘন্টা</span>
+                        <span>📚 ২০টি মডিউল</span>
+                    </div>
+                    <button class="btn btn-primary" data-i18n="courses.cta">আরও জানুন</button>
                 </div>
             </div>
         </section>
 
         <section id="about" class="about">
-            <h2>About Us</h2>
-            <p>We're dedicated to building the best tools to help you succeed. Our platform is designed with simplicity and power in mind.</p>
+            <h2 data-i18n="about.title">আমাদের সম্পর্কে</h2>
+            <p data-i18n="about.desc">AI স্টেশন একটি আধুনিক অনলাইন শিক্ষা প্ল্যাটফর্ম যেখানে আমরা AI, অটোমেশন এবং টেকনোলজি সংক্রান্ত উচ্চমানের কোর্স প্রদান করি। আমাদের লক্ষ্য হলো প্রত্যেক শিক্ষার্থীকে ভবিষ্যতের জন্য প্রস্তুত করা এবং তাদের ক্যারিয়ার গড়তে সাহায্য করা।</p>
+            <div class="about-values">
+                <div class="value-item">
+                    <div class="value-icon">💡</div>
+                    <h4 data-i18n="about.values.innovation">ইনোভেশন</h4>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">🤝</div>
+                    <h4 data-i18n="about.values.community">কমিউনিটি</h4>
+                </div>
+                <div class="value-item">
+                    <div class="value-icon">🎯</div>
+                    <h4 data-i18n="about.values.excellence">শ্রেষ্ঠত্ব</h4>
+                </div>
+            </div>
         </section>
 
         <section id="contact" class="contact">
-            <h2>Get In Touch</h2>
-            <p>Have questions? We'd love to hear from you.</p>
-            <button class="btn btn-primary">Contact Us</button>
+            <h2 data-i18n="contact.title">যোগাযোগ করুন</h2>
+            <p data-i18n="contact.desc">কোন প্রশ্ন আছে? আমরা সাহায্য করতে প্রস্তুত।</p>
+            <button class="btn btn-primary" data-i18n="contact.cta">আমাদের সাথে যোগাযোগ করুন</button>
         </section>
 
         <footer>
-            <p>&copy; 2024 MyBrand. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 data-i18n="brand">AI স্টেশন</h3>
+                    <p data-i18n="footer.tagline">শিখুন, বিকশিত হন, সফল হন</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.quick.title">দ্রুত লিংক</h4>
+                        <ul>
+                            <li><a href="#features" data-i18n="nav.features">বৈশিষ্ট্য</a></li>
+                            <li><a href="#courses" data-i18n="nav.courses">কোর্স</a></li>
+                            <li><a href="#about" data-i18n="nav.about">আমাদের সম্পর্কে</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4 data-i18n="footer.support.title">সাপোর্ট</h4>
+                        <ul>
+                            <li><a href="#" data-i18n="footer.support.help">সাহায্য কেন্দ্র</a></li>
+                            <li><a href="#" data-i18n="footer.support.faq">FAQ</a></li>
+                            <li><a href="#contact" data-i18n="nav.contact">যোগাযোগ</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; ২০২৪ AI স্টেশন। সর্বস্বত্ব সংরক্ষিত।</p>
+            </div>
         </footer>
     </div>
+    <script src="/app.js"></script>
 </body>
 </html>
